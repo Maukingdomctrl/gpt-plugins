@@ -1,0 +1,32 @@
+{
+  "author": {
+    "email": "dr.poojapendurkar@gmail.com",
+    "name": "Pooja P"
+  },
+  "description": "A private, practical coach for choosing, creating, pricing, and marketing a digital product on a zero-rupee budget, with the goal of reaching a first sale.",
+  "interface": {
+    "capabilities": [
+      "Interactive"
+    ],
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Help me choose one digital product I can create for free and sell online.",
+      "Guide me through creating and listing my first printable product, one step at a time.",
+      "Review my digital product idea and make a realistic first-sale action plan."
+    ],
+    "developerName": "Pooja P",
+    "displayName": "Digital Product Earning Assistant",
+    "longDescription": "A step-by-step private assistant for choosing one realistic digital product, making a useful first version with free tools, preparing a listing, and testing free marketing channels. It emphasizes small actions, transparent costs, and realistic expectations rather than income promises.",
+    "shortDescription": "First digital product sale"
+  },
+  "keywords": [
+    "digital products",
+    "printables",
+    "worksheets",
+    "first sale",
+    "marketing"
+  ],
+  "name": "digital-product-earning-assistant",
+  "skills": "./skills",
+  "version": "0.1.0"
+}
