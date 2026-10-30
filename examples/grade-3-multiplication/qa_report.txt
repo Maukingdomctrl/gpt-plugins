@@ -1,0 +1,21 @@
+QA REPORT: Multiplication & Division Facts Practice
+Problems: 65 | verified by calculation: 64 | need manual review: 1 | open-ended: 0
+Margins: 0.60 in on all sides
+multiplication-division-facts-practice_worksheets_letter.pdf: 3 page(s), 8.50 x 11.00 in
+multiplication-division-facts-practice_answer_key_letter.pdf: 3 page(s), 8.50 x 11.00 in
+multiplication-division-facts-practice_worksheets_a4.pdf: 3 page(s), 8.27 x 11.69 in
+multiplication-division-facts-practice_answer_key_a4.pdf: 3 page(s), 8.27 x 11.69 in
+
+Files:
+  multiplication-division-facts-practice_worksheets_letter.pdf
+  multiplication-division-facts-practice_answer_key_letter.pdf
+  multiplication-division-facts-practice_worksheets_a4.pdf
+  multiplication-division-facts-practice_answer_key_a4.pdf
+  multiplication-division-facts-practice_cover.png
+  multiplication-division-facts-practice_preview_1.png
+  multiplication-division-facts-practice_preview_2.png
+
+Items to check:
+  REVIEW S3 Q5: Which number sentence matches 4 groups of 5 stars? -> B
+
+Before calling this finished: open each PDF, read every 'REVIEW' item, check spelling, age level and that nothing is copied from a textbook.

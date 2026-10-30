@@ -3,7 +3,7 @@
     "email": "dr.poojapendurkar@gmail.com",
     "name": "Pooja P"
   },
-  "description": "A private, practical coach for choosing, creating, pricing, and marketing a digital product on a zero-rupee budget, with the goal of reaching a first sale.",
+  "description": "A private, practical coach for earning a first sale from digital products on a zero-rupee budget: checks which marketplaces an India-based seller can really use, builds print-ready worksheets with answer keys and listing copy, and tracks sales to decide what to improve.",
   "interface": {
     "capabilities": [
       "Interactive"
@@ -11,12 +11,12 @@
     "category": "Productivity",
     "defaultPrompt": [
       "Help me choose one digital product I can create for free and sell online.",
-      "Guide me through creating and listing my first printable product, one step at a time.",
-      "Review my digital product idea and make a realistic first-sale action plan."
+      "Create a print-ready US Letter math worksheet pack with a separate answer key and listing copy.",
+      "Compare which marketplaces I can sell on from India, including GST, payouts and fees."
     ],
     "developerName": "Pooja P",
     "displayName": "Digital Product Earning Assistant",
-    "longDescription": "A step-by-step private assistant for choosing one realistic digital product, making a useful first version with free tools, preparing a listing, and testing free marketing channels. It emphasizes small actions, transparent costs, and realistic expectations rather than income promises.",
+    "longDescription": "A step-by-step private assistant for an India-based seller targeting US buyers. It compares marketplaces using dated, sourced facts on seller eligibility, GST, payouts and fees; creates complete printable products (US Letter and A4 PDFs, separate answer keys, covers, previews, titles, descriptions and tags) with calculated answer checks; and turns weekly listing numbers into one clear next action. It favours free tools, one product at a time, and honest expectations rather than income promises.",
     "shortDescription": "First digital product sale"
   },
   "keywords": [
@@ -24,9 +24,12 @@
     "printables",
     "worksheets",
     "first sale",
-    "marketing"
+    "marketing",
+    "answer keys",
+    "marketplace comparison",
+    "sales tracking"
   ],
   "name": "digital-product-earning-assistant",
   "skills": "./skills",
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
