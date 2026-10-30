@@ -1,0 +1,24 @@
+QA REPORT: States of Matter Practice
+Problems: 11 | verified by calculation: 2 | need manual review: 4 | open-ended: 5
+Margins: 0.60 in on all sides
+states-of-matter-practice_worksheets_a4.pdf: 3 page(s), 8.27 x 11.69 in
+states-of-matter-practice_answer_key_a4.pdf: 3 page(s), 8.27 x 11.69 in
+states-of-matter-practice_worksheets_letter.pdf: 3 page(s), 8.50 x 11.00 in
+states-of-matter-practice_answer_key_letter.pdf: 3 page(s), 8.50 x 11.00 in
+
+Files:
+  states-of-matter-practice_worksheets_a4.pdf
+  states-of-matter-practice_answer_key_a4.pdf
+  states-of-matter-practice_worksheets_letter.pdf
+  states-of-matter-practice_answer_key_letter.pdf
+  states-of-matter-practice_cover.png
+  states-of-matter-practice_preview_1.png
+  states-of-matter-practice_preview_2.png
+
+Items to check:
+  REVIEW S1 Q1: Which state of matter has a fixed shape? -> A
+  REVIEW S1 Q2: Water boils at sea level at about: -> C
+  REVIEW S1 Q3: Melting changes a solid into a: -> B
+  REVIEW S1 Q4: Condensation turns a gas into a: -> A
+
+Before calling this finished: open each PDF, read every 'REVIEW' item, check spelling, age level and that nothing is copied from a textbook.

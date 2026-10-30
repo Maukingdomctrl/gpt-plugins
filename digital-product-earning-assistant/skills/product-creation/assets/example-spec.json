@@ -1,0 +1,33 @@
+{
+  "title": "Multiplication & Division Facts Practice",
+  "subtitle": "Facts 2-10 with word problems",
+  "grade": "Grade 3",
+  "brand": "Your Shop Name",
+  "paper": ["letter", "a4"],
+  "sections": [
+    {
+      "heading": "Part A: Multiplication facts",
+      "instructions": "Solve each multiplication fact. Write your answer on the line.",
+      "columns": 3,
+      "generate": {"op": "multiply", "count": 30, "a": [2, 10], "b": [2, 10], "seed": 7}
+    },
+    {
+      "heading": "Part B: Division facts",
+      "instructions": "Solve each division fact. Think: what times the second number makes the first number?",
+      "columns": 3,
+      "generate": {"op": "divide", "count": 30, "a": [2, 10], "b": [2, 10], "seed": 11}
+    },
+    {
+      "heading": "Part C: Word problems",
+      "instructions": "Read each problem carefully. Show your work, then write the answer with a label.",
+      "columns": 1,
+      "problems": [
+        {"q": "Maya has 6 bags. Each bag holds 4 apples. How many apples does she have in all?", "a": "24", "check": "6*4", "lines": 3, "explain": "6 groups of 4: 6 × 4 = 24 apples."},
+        {"q": "A teacher shares 35 pencils equally among 5 tables. How many pencils does each table get?", "a": "7", "check": "35/5", "lines": 3, "explain": "35 ÷ 5 = 7 pencils."},
+        {"q": "There are 8 rows of chairs with 9 chairs in each row. How many chairs are there?", "a": "72", "check": "8*9", "lines": 3, "explain": "8 × 9 = 72 chairs."},
+        {"q": "Leo reads 3 pages every day for 7 days. How many pages does he read?", "a": "21", "check": "3*7", "lines": 3, "explain": "3 × 7 = 21 pages."},
+        {"q": "Which number sentence matches 4 groups of 5 stars?", "choices": ["4 + 5 = 9", "4 × 5 = 20", "20 ÷ 4 = 4"], "a": "B", "explain": "Equal groups mean multiplication: 4 × 5 = 20."}
+      ]
+    }
+  ]
+}

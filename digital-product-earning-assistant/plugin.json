@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "email": "dr.poojapendurkar@gmail.com",
+    "name": "Pooja P"
+  },
+  "description": "A private, practical coach for earning a first sale from digital products on a zero-rupee budget: checks which marketplaces an India-based seller can really use, builds print-ready worksheets with answer keys and listing copy, and tracks sales to decide what to improve.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "Interactive"
+        ],
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Help me choose one digital product I can create for free and sell online.",
+          "Create a print-ready US Letter math worksheet pack with a separate answer key and listing copy.",
+          "Compare which marketplaces I can sell on from India, including GST, payouts and fees."
+        ],
+        "developerName": "Pooja P",
+        "displayName": "Digital Product Earning Assistant",
+        "longDescription": "A step-by-step private assistant for an India-based seller targeting US buyers. It compares marketplaces using dated, sourced facts on seller eligibility, GST, payouts and fees; creates complete printable products (US Letter and A4 PDFs, separate answer keys, covers, previews, titles, descriptions and tags) with calculated answer checks; and turns weekly listing numbers into one clear next action. It favours free tools, one product at a time, and honest expectations rather than income promises.",
+        "shortDescription": "First digital product sale"
+      }
+    }
+  },
+  "keywords": [
+    "digital products",
+    "printables",
+    "worksheets",
+    "first sale",
+    "marketing",
+    "answer keys",
+    "marketplace comparison",
+    "sales tracking"
+  ],
+  "name": "digital-product-earning-assistant",
+  "version": "0.2.0"
+}

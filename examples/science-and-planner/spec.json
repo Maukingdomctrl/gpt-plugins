@@ -1,0 +1,14 @@
+{"title":"States of Matter Practice","subtitle":"Solids, liquids and gases","grade":"Grade 5","brand":"Bright Pages","paper":["a4","letter"],
+ "sections":[
+  {"heading":"Part A: Multiple choice","instructions":"Circle the best answer.","columns":2,"problems":[
+   {"q":"Which state of matter has a fixed shape?","choices":["Solid","Liquid","Gas"],"a":"A","explain":"Particles in a solid are held in place."},
+   {"q":"Water boils at sea level at about:","choices":["32 °F","100 °F","212 °F"],"a":"C","explain":"212 °F = 100 °C."},
+   {"q":"Melting changes a solid into a:","choices":["Gas","Liquid","Solid"],"a":"B"},
+   {"q":"Condensation turns a gas into a:","choices":["Liquid","Solid","Plasma"],"a":"A"}]},
+  {"heading":"Part B: Quick calculations","instructions":"Show your work.","columns":2,"problems":[
+   {"q":"A cup holds 250 mL of water. How many mL are in 4 cups?","a":"1000","check":"250*4","lines":2},
+   {"q":"Ice warms from 20 °F to 32 °F. By how many degrees did it warm?","a":"12","check":"32-20","lines":2}]},
+  {"heading":"Weekly study planner","instructions":"Write one goal for each day.","columns":1,"problems":[
+   {"q":"Monday","open":true,"lines":2},{"q":"Tuesday","open":true,"lines":2},
+   {"q":"Wednesday","open":true,"lines":2},{"q":"Thursday","open":true,"lines":2},
+   {"q":"Friday","open":true,"lines":2}]}]}
