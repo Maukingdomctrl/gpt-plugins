@@ -1,0 +1,35 @@
+{
+  "author": {
+    "email": "dr.poojapendurkar@gmail.com",
+    "name": "Pooja P"
+  },
+  "description": "Evidence-based battery drain and charging diagnosis for the Samsung Galaxy M15 5G (SM-M156B) and Galaxy A14 5G (SM-A146) only: identifies the exact model and One UI version, collects measurements, ranks likely causes, recommends the fewest targeted One UI changes with trade-offs and reversal steps, and verifies the result with a before/after test.",
+  "interface": {
+    "capabilities": [
+      "Interactive"
+    ],
+    "category": "Productivity",
+    "defaultPrompt": [
+      "My Galaxy M15 5G loses 20% overnight. Help me find out why.",
+      "My Galaxy A14 5G drains fast on 5G. Can you diagnose it step by step?",
+      "My phone charges slowly. It's a Galaxy A14 5G (SM-A146B)."
+    ],
+    "developerName": "Pooja P",
+    "displayName": "Samsung Battery Diagnostics",
+    "longDescription": "A focused diagnostic specialist for two Samsung phones. It confirms the model number (and rejects look-alikes such as the Galaxy A14 4G), asks only for the evidence the symptom needs (battery usage screenshots, start/end percentages, screen-on time, network conditions), computes drain rates with stated uncertainty, separates observations from hypotheses, ranks causes with a deterministic scoring table, recommends at most two device-specific changes with exact One UI paths, trade-offs and how to undo them, and judges the outcome with a controlled before/after comparison. It never claims to have inspected the phone and avoids factory resets, calibration and optimizer apps.",
+    "shortDescription": "Galaxy M15 5G / A14 5G battery diagnosis"
+  },
+  "keywords": [
+    "battery",
+    "battery drain",
+    "Samsung",
+    "Galaxy M15 5G",
+    "Galaxy A14 5G",
+    "One UI",
+    "charging",
+    "diagnostics"
+  ],
+  "name": "samsung-battery-diagnostics",
+  "skills": "./skills",
+  "version": "0.1.0"
+}

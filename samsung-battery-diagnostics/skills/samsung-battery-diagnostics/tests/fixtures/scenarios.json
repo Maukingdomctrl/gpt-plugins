@@ -1,0 +1,293 @@
+[
+  {
+    "id": "M15-1-rapid-screen-on",
+    "device": "galaxy-m15-5g",
+    "incomplete_evidence": {"device": "galaxy-m15-5g", "symptoms": ["rapid_screen_on"]},
+    "expected_missing": ["active_measurement", "top_consumers", "display", "network"],
+    "evidence": {
+      "device": "galaxy-m15-5g",
+      "symptoms": ["rapid_screen_on"],
+      "active_measurement": {"kind": "active", "start_pct": 100, "end_pct": 62, "duration_h": 3, "screen_on_min": 150, "workload": "light"},
+      "top_consumers": [{"name": "Screen", "type": "screen", "pct": 40}, {"name": "Instagram", "type": "app", "pct": 25, "heavily_used": true}],
+      "display": {"brightness": "high", "auto_brightness": false, "timeout_s": 600, "motion_smoothness": "adaptive"},
+      "network": {"mode": "LTE", "signal": "good", "wifi_connected": true}
+    },
+    "expected_top": "DISPLAY",
+    "expected_interventions": ["INT-DISP-01", "INT-DISP-02"],
+    "before": {"device": "galaxy-m15-5g", "kind": "active", "start_pct": 100, "end_pct": 62, "duration_h": 3, "screen_on_min": 150, "workload": "light", "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "workload": "light"}},
+    "after": {"device": "galaxy-m15-5g", "kind": "active", "start_pct": 100, "end_pct": 74, "duration_h": 3, "screen_on_min": 150, "workload": "light", "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "workload": "light"}, "changes_since_before": 2},
+    "expected_verdict": "improved"
+  },
+  {
+    "id": "A14-1-rapid-screen-on",
+    "device": "galaxy-a14-5g",
+    "incomplete_evidence": {"device": "galaxy-a14-5g", "symptoms": ["rapid_screen_on"], "network": {"mode": "LTE", "signal": "good", "wifi_connected": true}},
+    "expected_missing": ["active_measurement", "top_consumers", "display"],
+    "evidence": {
+      "device": "galaxy-a14-5g",
+      "symptoms": ["rapid_screen_on"],
+      "active_measurement": {"kind": "active", "start_pct": 90, "end_pct": 50, "duration_h": 3, "screen_on_min": 160, "workload": "light"},
+      "top_consumers": [{"name": "Facebook", "type": "app", "pct": 35, "background_heavy": true, "heavily_used": false}, {"name": "Screen", "type": "screen", "pct": 20}],
+      "display": {"brightness": "medium", "auto_brightness": true, "timeout_s": 30, "motion_smoothness": "adaptive"},
+      "network": {"mode": "LTE", "signal": "good", "wifi_connected": true}
+    },
+    "expected_top": "APP_BACKGROUND",
+    "expected_interventions": ["INT-APP-01", "INT-APP-02"],
+    "before": {"device": "galaxy-a14-5g", "kind": "active", "start_pct": 90, "end_pct": 50, "duration_h": 3, "screen_on_min": 160, "workload": "light", "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "workload": "light"}},
+    "after": {"device": "galaxy-a14-5g", "kind": "active", "start_pct": 90, "end_pct": 60, "duration_h": 3, "screen_on_min": 160, "workload": "light", "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "workload": "light"}, "changes_since_before": 1},
+    "expected_verdict": "resolved"
+  },
+  {
+    "id": "M15-2-overnight",
+    "device": "galaxy-m15-5g",
+    "incomplete_evidence": {"device": "galaxy-m15-5g", "symptoms": ["overnight"]},
+    "expected_missing": ["standby_measurement", "top_consumers", "network"],
+    "evidence": {
+      "device": "galaxy-m15-5g",
+      "symptoms": ["overnight"],
+      "standby_measurement": {"kind": "standby", "start_pct": 85, "end_pct": 70, "duration_h": 8, "screen_on_min": 3},
+      "top_consumers": [{"name": "CallerID App", "type": "app", "pct": 30, "background_heavy": true}, {"name": "Android System", "type": "system", "pct": 22}],
+      "display": {"aod": true},
+      "network": {"mode": "LTE", "signal": "good", "wifi_connected": true}
+    },
+    "expected_top": "APP_BACKGROUND",
+    "expected_interventions": ["INT-APP-01", "INT-APP-02"],
+    "before": {"device": "galaxy-m15-5g", "kind": "standby", "start_pct": 85, "end_pct": 70, "duration_h": 8, "screen_on_min": 3, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}},
+    "after": {"device": "galaxy-m15-5g", "kind": "standby", "start_pct": 85, "end_pct": 79, "duration_h": 8, "screen_on_min": 2, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}, "changes_since_before": 1},
+    "expected_verdict": "resolved"
+  },
+  {
+    "id": "A14-2-overnight",
+    "device": "galaxy-a14-5g",
+    "incomplete_evidence": {"device": "galaxy-a14-5g", "symptoms": ["overnight"], "standby_measurement": {"kind": "standby", "start_pct": 80, "end_pct": 62, "duration_h": 8}},
+    "expected_missing": ["top_consumers", "network"],
+    "evidence": {
+      "device": "galaxy-a14-5g",
+      "symptoms": ["overnight"],
+      "standby_measurement": {"kind": "standby", "start_pct": 80, "end_pct": 62, "duration_h": 8, "screen_on_min": 2},
+      "top_consumers": [{"name": "Chrome", "type": "app", "pct": 8}, {"name": "WhatsApp", "type": "app", "pct": 7}, {"name": "Android System", "type": "system", "pct": 12}],
+      "network": {"mode": "5G", "signal": "weak", "wifi_connected": false}
+    },
+    "expected_top": "WEAK_SIGNAL",
+    "expected_interventions": ["INT-NET-01", "INT-NET-02"],
+    "before": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 80, "end_pct": 62, "duration_h": 8, "conditions": {"network_mode": "5G", "wifi_connected": false, "signal": "weak", "location": "home"}},
+    "after": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 80, "end_pct": 70, "duration_h": 8, "conditions": {"network_mode": "LTE", "wifi_connected": false, "signal": "weak", "location": "home"}, "intervention_changes": ["network_mode"], "changes_since_before": 1},
+    "expected_verdict": "improved"
+  },
+  {
+    "id": "M15-3-after-install",
+    "device": "galaxy-m15-5g",
+    "incomplete_evidence": {"device": "galaxy-m15-5g", "symptoms": ["after_install"]},
+    "expected_missing": ["recent_install", "top_consumers", "standby_measurement"],
+    "evidence": {
+      "device": "galaxy-m15-5g",
+      "symptoms": ["after_install"],
+      "recent_install": {"name": "PhotoFilter X", "days_ago": 3},
+      "standby_measurement": {"kind": "standby", "start_pct": 90, "end_pct": 75, "duration_h": 7, "screen_on_min": 4},
+      "top_consumers": [{"name": "PhotoFilter X", "type": "app", "pct": 28, "background_heavy": true}],
+      "network": {"mode": "LTE", "signal": "good", "wifi_connected": true}
+    },
+    "expected_top": "RECENT_INSTALL",
+    "expected_interventions": ["INT-APP-03", "INT-APP-01"],
+    "before": {"device": "galaxy-m15-5g", "kind": "standby", "start_pct": 90, "end_pct": 75, "duration_h": 7, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}},
+    "after": {"device": "galaxy-m15-5g", "kind": "standby", "start_pct": 90, "end_pct": 85, "duration_h": 7, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}, "changes_since_before": 1},
+    "expected_verdict": "resolved"
+  },
+  {
+    "id": "A14-3-after-install",
+    "device": "galaxy-a14-5g",
+    "incomplete_evidence": {"device": "galaxy-a14-5g", "symptoms": ["after_install"], "recent_install": {"name": "GameHub", "days_ago": 5}},
+    "expected_missing": ["top_consumers", "standby_measurement"],
+    "evidence": {
+      "device": "galaxy-a14-5g",
+      "symptoms": ["after_install"],
+      "recent_install": {"name": "GameHub", "days_ago": 5},
+      "standby_measurement": {"kind": "standby", "start_pct": 70, "end_pct": 58, "duration_h": 8, "screen_on_min": 3},
+      "top_consumers": [{"name": "GameHub", "type": "app", "pct": 18, "background_heavy": true}],
+      "network": {"mode": "LTE", "signal": "good", "wifi_connected": true}
+    },
+    "expected_top": "RECENT_INSTALL",
+    "expected_interventions": ["INT-APP-03", "INT-APP-01"],
+    "before": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 70, "end_pct": 58, "duration_h": 8, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}},
+    "after": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 70, "end_pct": 64, "duration_h": 8, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}, "changes_since_before": 1},
+    "expected_verdict": "resolved"
+  },
+  {
+    "id": "M15-4-5g",
+    "device": "galaxy-m15-5g",
+    "incomplete_evidence": {"device": "galaxy-m15-5g", "symptoms": ["5g"], "network": {"mode": "5G"}},
+    "expected_missing": ["standby_measurement", "top_consumers"],
+    "evidence": {
+      "device": "galaxy-m15-5g",
+      "symptoms": ["5g"],
+      "standby_measurement": {"kind": "standby", "start_pct": 80, "end_pct": 66, "duration_h": 8, "screen_on_min": 3},
+      "top_consumers": [{"name": "Gmail", "type": "app", "pct": 6}, {"name": "Android System", "type": "system", "pct": 14}],
+      "network": {"mode": "5G", "signal": "fluctuating", "switching": true, "wifi_connected": false}
+    },
+    "expected_top": "NETWORK_5G",
+    "expected_interventions": ["INT-NET-02"],
+    "before": {"device": "galaxy-m15-5g", "kind": "standby", "start_pct": 80, "end_pct": 66, "duration_h": 8, "conditions": {"network_mode": "5G", "wifi_connected": false, "signal": "fluctuating", "location": "home"}},
+    "after": {"device": "galaxy-m15-5g", "kind": "standby", "start_pct": 80, "end_pct": 72, "duration_h": 8, "conditions": {"network_mode": "LTE", "wifi_connected": false, "signal": "fluctuating", "location": "home"}, "intervention_changes": ["network_mode"], "changes_since_before": 1},
+    "expected_verdict": "improved"
+  },
+  {
+    "id": "A14-4-5g-normal",
+    "device": "galaxy-a14-5g",
+    "incomplete_evidence": {"device": "galaxy-a14-5g", "symptoms": ["5g"]},
+    "expected_missing": ["network", "standby_measurement", "top_consumers"],
+    "evidence": {
+      "device": "galaxy-a14-5g",
+      "symptoms": ["5g"],
+      "standby_measurement": {"kind": "standby", "start_pct": 80, "end_pct": 74, "duration_h": 8, "screen_on_min": 2},
+      "top_consumers": [{"name": "YouTube", "type": "app", "pct": 12, "heavily_used": true}],
+      "network": {"mode": "5G", "signal": "good", "wifi_connected": false}
+    },
+    "expected_top": "WITHIN_EXPECTED",
+    "expected_interventions": ["INT-NONE-01"],
+    "before": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 80, "end_pct": 74, "duration_h": 8, "conditions": {"network_mode": "5G", "wifi_connected": false, "signal": "good", "location": "home"}},
+    "after": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 80, "end_pct": 75, "duration_h": 8, "conditions": {"network_mode": "LTE", "wifi_connected": false, "signal": "good", "location": "home"}, "intervention_changes": ["network_mode"], "changes_since_before": 1},
+    "expected_verdict": "no_measurable_change"
+  },
+  {
+    "id": "M15-5-weak-signal",
+    "device": "galaxy-m15-5g",
+    "incomplete_evidence": {"device": "galaxy-m15-5g", "symptoms": ["weak_signal"], "network": {"mode": "LTE", "signal": "weak", "wifi_connected": false}},
+    "expected_missing": ["standby_measurement"],
+    "evidence": {
+      "device": "galaxy-m15-5g",
+      "symptoms": ["weak_signal", "idle"],
+      "standby_measurement": {"kind": "standby", "start_pct": 90, "end_pct": 78, "duration_h": 6, "screen_on_min": 10},
+      "top_consumers": [{"name": "Teams", "type": "app", "pct": 9}],
+      "network": {"mode": "LTE", "signal": "weak", "wifi_connected": false}
+    },
+    "expected_top": "WEAK_SIGNAL",
+    "expected_interventions": ["INT-NET-01", "INT-NET-02"],
+    "before": {"device": "galaxy-m15-5g", "kind": "standby", "start_pct": 90, "end_pct": 78, "duration_h": 6, "screen_on_min": 10, "conditions": {"network_mode": "LTE", "wifi_connected": false, "signal": "weak", "location": "office"}},
+    "after": {"device": "galaxy-m15-5g", "kind": "standby", "start_pct": 90, "end_pct": 83, "duration_h": 6, "screen_on_min": 10, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "weak", "location": "office"}, "intervention_changes": ["wifi_connected"], "changes_since_before": 1},
+    "expected_verdict": "improved"
+  },
+  {
+    "id": "A14-5-weak-signal",
+    "device": "galaxy-a14-5g",
+    "incomplete_evidence": {"device": "galaxy-a14-5g", "symptoms": ["weak_signal"]},
+    "expected_missing": ["network", "standby_measurement"],
+    "evidence": {
+      "device": "galaxy-a14-5g",
+      "symptoms": ["weak_signal", "overnight"],
+      "standby_measurement": {"kind": "standby", "start_pct": 85, "end_pct": 65, "duration_h": 9, "screen_on_min": 2},
+      "top_consumers": [{"name": "Messages", "type": "app", "pct": 5}],
+      "network": {"mode": "LTE", "signal": "weak", "wifi_connected": false}
+    },
+    "expected_top": "WEAK_SIGNAL",
+    "expected_interventions": ["INT-NET-01", "INT-NET-02"],
+    "before": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 85, "end_pct": 65, "duration_h": 9, "conditions": {"network_mode": "LTE", "wifi_connected": false, "signal": "weak", "location": "home"}},
+    "after": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 85, "end_pct": 80, "duration_h": 9, "conditions": {"network_mode": "airplane", "wifi_connected": false, "signal": "weak", "location": "home"}, "intervention_changes": ["network_mode"], "changes_since_before": 1},
+    "expected_verdict": "resolved"
+  },
+  {
+    "id": "M15-6-idle-after-update",
+    "device": "galaxy-m15-5g",
+    "incomplete_evidence": {"device": "galaxy-m15-5g", "symptoms": ["idle"], "recent_update_days": 1},
+    "expected_missing": ["standby_measurement", "top_consumers", "network"],
+    "evidence": {
+      "device": "galaxy-m15-5g",
+      "symptoms": ["idle"],
+      "recent_update_days": 1,
+      "standby_measurement": {"kind": "standby", "start_pct": 70, "end_pct": 61, "duration_h": 4.5, "screen_on_min": 5},
+      "top_consumers": [{"name": "Google Play services", "type": "system", "pct": 26}],
+      "network": {"mode": "LTE", "signal": "good", "wifi_connected": true}
+    },
+    "expected_top": "POST_UPDATE_SETTLING",
+    "expected_interventions": ["INT-WAIT-01"],
+    "before": {"device": "galaxy-m15-5g", "kind": "standby", "start_pct": 70, "end_pct": 61, "duration_h": 4.5, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}},
+    "after": {"device": "galaxy-m15-5g", "kind": "standby", "start_pct": 70, "end_pct": 66, "duration_h": 4.5, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}, "changes_since_before": 0},
+    "expected_verdict": "improved"
+  },
+  {
+    "id": "A14-6-idle-unexplained",
+    "device": "galaxy-a14-5g",
+    "incomplete_evidence": {"device": "galaxy-a14-5g", "symptoms": ["idle"], "network": {"mode": "LTE", "signal": "good", "wifi_connected": true}},
+    "expected_missing": ["standby_measurement", "top_consumers"],
+    "evidence": {
+      "device": "galaxy-a14-5g",
+      "symptoms": ["idle"],
+      "standby_measurement": {"kind": "standby", "start_pct": 80, "end_pct": 64, "duration_h": 8, "screen_on_min": 3},
+      "top_consumers": [{"name": "Chrome", "type": "app", "pct": 9}, {"name": "Android System", "type": "system", "pct": 11}],
+      "network": {"mode": "LTE", "signal": "good", "wifi_connected": true},
+      "health": {"members_status": "normal", "age_months": 30}
+    },
+    "expected_top": "UNEXPLAINED_DRAIN",
+    "expected_interventions": ["TEST-AIRPLANE", "TEST-SAFE"],
+    "before": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 80, "end_pct": 64, "duration_h": 8, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}},
+    "after": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 80, "end_pct": 74, "duration_h": 8, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}, "changes_since_before": 1},
+    "expected_verdict": "resolved"
+  },
+  {
+    "id": "M15-7-slow-charging",
+    "device": "galaxy-m15-5g",
+    "incomplete_evidence": {"device": "galaxy-m15-5g", "symptoms": ["slow_charging"]},
+    "expected_missing": ["charging"],
+    "evidence": {
+      "device": "galaxy-m15-5g",
+      "symptoms": ["slow_charging"],
+      "charging": {"source": "adapter", "adapter_w": 15, "fast_charging_setting": true, "used_while_charging": true}
+    },
+    "expected_top": "CHARGER_UNDERPOWERED",
+    "expected_interventions": ["INT-CHG-01"],
+    "before": {"device": "galaxy-m15-5g", "kind": "charging", "start_pct": 30, "end_pct": 48, "duration_h": 0.5, "charger_w": 15, "conditions": {"temperature": "room"}},
+    "after": {"device": "galaxy-m15-5g", "kind": "charging", "start_pct": 30, "end_pct": 58, "duration_h": 0.5, "charger_w": 25, "conditions": {"temperature": "room"}, "changes_since_before": 1},
+    "expected_verdict": "improved"
+  },
+  {
+    "id": "A14-7-slow-charging",
+    "device": "galaxy-a14-5g",
+    "incomplete_evidence": {"device": "galaxy-a14-5g", "symptoms": ["slow_charging"]},
+    "expected_missing": ["charging"],
+    "evidence": {
+      "device": "galaxy-a14-5g",
+      "symptoms": ["slow_charging"],
+      "charging": {"source": "adapter", "adapter_w": 25, "fast_charging_setting": true, "cable_damaged": true, "interruptions": true}
+    },
+    "expected_top": "CABLE_PORT",
+    "expected_interventions": ["INT-CHG-03"],
+    "before": {"device": "galaxy-a14-5g", "kind": "charging", "start_pct": 25, "end_pct": 40, "duration_h": 0.5, "conditions": {"temperature": "room"}},
+    "after": {"device": "galaxy-a14-5g", "kind": "charging", "start_pct": 25, "end_pct": 47, "duration_h": 0.5, "conditions": {"temperature": "room"}, "changes_since_before": 1},
+    "expected_verdict": "improved"
+  },
+  {
+    "id": "M15-8-degradation",
+    "device": "galaxy-m15-5g",
+    "incomplete_evidence": {"device": "galaxy-m15-5g", "symptoms": ["degradation"], "health": {"age_months": 20}},
+    "expected_missing": ["health", "standby_measurement"],
+    "evidence": {
+      "device": "galaxy-m15-5g",
+      "symptoms": ["degradation"],
+      "standby_measurement": {"kind": "standby", "start_pct": 60, "end_pct": 52, "duration_h": 8, "screen_on_min": 2},
+      "health": {"members_status": "weak", "shutdown_above_pct": 18, "pct_jumps": true, "age_months": 20}
+    },
+    "expected_top": "BATTERY_DEGRADATION",
+    "expected_interventions": ["INT-HEALTH-02"],
+    "before": null,
+    "after": null,
+    "expected_verdict": null
+  },
+  {
+    "id": "A14-8-age-only-not-degradation",
+    "device": "galaxy-a14-5g",
+    "incomplete_evidence": {"device": "galaxy-a14-5g", "symptoms": ["degradation"], "health": {"age_months": 34}},
+    "expected_missing": ["health", "standby_measurement"],
+    "evidence": {
+      "device": "galaxy-a14-5g",
+      "symptoms": ["degradation"],
+      "standby_measurement": {"kind": "standby", "start_pct": 80, "end_pct": 70, "duration_h": 8, "screen_on_min": 2},
+      "top_consumers": [{"name": "WeatherLive", "type": "app", "pct": 20, "background_heavy": true}],
+      "apps_with_location_always": 2,
+      "health": {"members_status": "normal", "age_months": 34}
+    },
+    "expected_top": "APP_BACKGROUND",
+    "expected_interventions": ["INT-APP-01", "INT-APP-02"],
+    "before": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 80, "end_pct": 70, "duration_h": 8, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}},
+    "after": {"device": "galaxy-a14-5g", "kind": "standby", "start_pct": 80, "end_pct": 75, "duration_h": 8, "conditions": {"network_mode": "LTE", "wifi_connected": true, "signal": "good", "location": "home"}, "changes_since_before": 1},
+    "expected_verdict": "resolved"
+  }
+]

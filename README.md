@@ -25,3 +25,12 @@ cd digital-product-earning-assistant && zip -r ../dist/digital-product-earning-a
 ```
 
 Marketplace and tax facts were checked on 2026-10-30. Re-check them before relying on them.
+
+## Samsung Battery Diagnostics (private plugin, v0.1.0)
+
+| Path | What it is |
+|---|---|
+| `samsung-battery-diagnostics/` | Plugin source with ChatGPT (`plugin.json`, `.codex-plugin/`) and Claude Code (`.claude-plugin/`) manifests. |
+| `samsung-battery-diagnostics/skills/samsung-battery-diagnostics/` | The skill: evidence-based battery drain and charging diagnosis for the Galaxy M15 5G and Galaxy A14 5G only. |
+
+See `samsung-battery-diagnostics/README.md` for install, invocation and tests.

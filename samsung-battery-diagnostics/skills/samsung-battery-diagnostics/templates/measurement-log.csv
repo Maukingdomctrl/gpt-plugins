@@ -1,0 +1,2 @@
+run_id,device,model_number,one_ui,kind,date,start_time,end_time,start_pct,end_pct,screen_on_min,workload,network_mode,wifi_connected,signal,location,temperature,charger_w,changes_since_previous,notes,calc_rate,calc_uncertainty,calc_mA_eq,calc_class
+1,galaxy-a14-5g,SM-A146B,7.0,standby,2026-11-01,23:00,07:00,80,68,4,,5G,no,weak,home,cool,,0,baseline night,,,,
