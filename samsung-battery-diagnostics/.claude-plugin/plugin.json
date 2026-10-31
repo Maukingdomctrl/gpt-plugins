@@ -1,0 +1,19 @@
+{
+  "name": "samsung-battery-diagnostics",
+  "version": "0.1.0",
+  "description": "Evidence-based battery drain and charging diagnosis for the Samsung Galaxy M15 5G (SM-M156B) and Galaxy A14 5G (SM-A146) only: identifies the exact model and One UI version, collects measurements, ranks likely causes, recommends the fewest targeted One UI changes with trade-offs and reversal steps, and verifies the result with a before/after test.",
+  "author": {
+    "email": "dr.poojapendurkar@gmail.com",
+    "name": "Pooja P"
+  },
+  "keywords": [
+    "battery",
+    "battery drain",
+    "Samsung",
+    "Galaxy M15 5G",
+    "Galaxy A14 5G",
+    "One UI",
+    "charging",
+    "diagnostics"
+  ]
+}
