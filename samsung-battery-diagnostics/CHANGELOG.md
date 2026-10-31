@@ -13,5 +13,6 @@ First release.
 - Deterministic engine `scripts/battery_diag.py` (identify, rate, rank, compare) with uncertainty-aware verdicts.
 - Report template and measurement log.
 - References with title, URL, applicable device, Android/One UI version and access date, plus a list of research gaps.
-- Tests: 16 device-specific scenario fixtures, unit tests, static validator, and a conversation-test rubric.
+- Tests: 16 device-specific scenario fixtures, unit tests, static validator, conversation-test rubric, and recorded conversation-test results with transcripts (`tests/behaviour-results.md`, `tests/transcripts/`).
+- SKILL.md rules 10–11 (target the top-ranked cause first; label outside claims) added after conversation testing.
 - Manifests for ChatGPT (`plugin.json`, `.codex-plugin/`) and Claude Code (`.claude-plugin/`).

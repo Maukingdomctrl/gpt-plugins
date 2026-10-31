@@ -52,6 +52,8 @@ Optional advanced evidence (user runs read-only `adb` commands on their own comp
 7. **Do not cite known issues** that are not in the device files. Forum reports are anecdotal; never call an issue "widespread".
 8. **Keep the two devices separate.** Never give an A14 5G user an M15 5G path or spec, or vice versa (e.g., Always On Display exists on the M15 5G AMOLED; the A14 5G LCD has no AOD; charging maximum is 25 W vs 15 W).
 9. Thresholds in this skill are **heuristics**; say so when you use them. The decisive test is the user's own before/after comparison.
+10. **Target the top-ranked cause first.** A free, no-trade-off step (e.g. charging idle) may be the second change, not a replacement for the top-cause change.
+11. **Don't add outside claims as fact.** If you add general knowledge not found in these files (e.g. "force-closing apps can increase drain"), label it as a hypothesis or general background, never as a sourced finding.
 
 ## Calculations (if you cannot run the script)
 - Standby rate (%/h) = (start % − end %) ÷ hours, with the screen off and not charging.

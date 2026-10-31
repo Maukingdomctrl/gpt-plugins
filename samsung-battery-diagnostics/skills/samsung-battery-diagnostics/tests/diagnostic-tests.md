@@ -163,3 +163,6 @@ Fill only with runs that were actually executed. See the repository's PR descrip
 
 | Date | Runner | Layer | Scenarios | Result |
 |---|---|---|---|---|
+| 2026-10-31 | build environment, Python 3 | Engine unit tests | 34 tests (16 scenarios + guards) | 34/34 pass |
+| 2026-10-31 | build environment, Python 3 | Static validator | 405 checks | 405/405 pass |
+| 2026-10-31 | Claude Code subagents | Conversation turns 1–3 | 16 scenarios + 8 guards (56 replies) | 53 pass, 3 pass with note, 0 fail — see `tests/behaviour-results.md` |
